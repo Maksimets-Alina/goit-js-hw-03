@@ -1,0 +1,14 @@
+// task-1.js
+
+// Оголошення функції slugify, яка приймає параметр title
+function slugify(title) {
+    // Приведення заголовка до нижнього регістру, поділ на слова та об'єднання за допомогою тире
+    return title.toLowerCase().split(' ').join('-');
+  }
+  
+  // Перевірка роботи функції
+  console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
+  console.log(slugify("English for developer")); // "english-for-developer"
+  console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
+  console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
+  
